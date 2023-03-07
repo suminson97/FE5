@@ -1,0 +1,85 @@
+@font-face {
+  font-family: "SpoqaHanSansNeo-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: "SpoqaHanSansNeo-Regular";
+}
+.wrap {
+  width: 350px;
+  margin: auto;
+}
+.a11y-hidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
+
+article {
+  background: #ffffff;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+  font-size: 12px;
+  padding: 18px 16px;
+}
+p {
+  font-family: "Spoqa Han Sans Neo";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 15px;
+}
+.btn-login {
+  display: block;
+  color: #ffffff;
+  background: #711bff;
+  border-radius: 4px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 12px;
+  text-decoration: none;
+  text-align: center;
+  margin: 16px 0;
+}
+.btn-login img {
+  height: 18px;
+  vertical-align: middle;
+}
+a {
+  color: #767676;
+  text-decoration: none;
+}
+.btn-join {
+  float: right;
+}
+.find-id + span {
+  display: inline-block;
+  width: 1px;
+  height: 12px;
+  background: #767676;
+  vertical-align: middle;
+  margin: 0 4px;
+}
+
+.find-id {
+  background-image: url(../IMG/icon-lock.png);
+}
+.btn-join {
+  background-image: url(../img/icon-user.png);
+}
+.find-id,
+.btn-join {
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  background-size: 1em;
+  padding-left: 1.2em;
+}

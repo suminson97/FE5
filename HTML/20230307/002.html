@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>레이아웃 만들기</title>
+    <style>
+      header {
+        background-color: skyblue;
+        height: 100px;
+        margin-bottom: 20px;
+      }
+      article {
+        background-color: rgb(63, 63, 124);
+        float: left;
+        /* display: inline-block; */
+        height: 400px;
+        width: calc(70% - 20px);
+      }
+      aside {
+        background-color: lime;
+        float: right;
+        /* display: inline-block; */
+        width: 30%;
+        height: 400px;
+      }
+      .clear-fix::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      footer {
+        background-color: salmon;
+        height: 100px;
+        clear: both;
+        margin-top: 20px;
+      }
+      @media (max-width: 640px) {
+        article,
+        aside {
+          float: none;
+          width: 100%;
+        }
+
+        aside {
+          margin-top: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>header</header>
+    <div class="clear-fix">
+      <article>article</article>
+
+      <aside>aside</aside>
+    </div>
+    <footer>footer</footer>
+  </body>
+</html>
