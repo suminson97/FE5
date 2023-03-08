@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>grid-실습 다른 버전</title>
+    <style>
+      .container {
+        display: grid;
+        width: 300px;
+        height: 300px;
+        gap: 5px;
+        grid-template-areas:
+          "A A A B B"
+          "A A A B B"
+          "C C D B B"
+          "E E F F F"
+          "E E F F F";
+      }
+      .container div:first-child {
+        background-color: blue;
+        grid-area: A;
+      }
+      .container div:nth-child(2) {
+        background-color: yellow;
+        grid-area: B;
+      }
+      .container div:nth-child(3) {
+        background-color: purple;
+        grid-area: C;
+      }
+      .container div:nth-child(4) {
+        background-color: orange;
+        grid-area: D;
+      }
+      .container div:nth-child(5) {
+        background-color: pink;
+        grid-area: E;
+      }
+      .container div:nth-child(6) {
+        background-color: green;
+        grid-area: F;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div>A</div>
+      <div>B</div>
+      <div>C</div>
+      <div>D</div>
+      <div>E</div>
+      <div>F</div>
+    </div>
+  </body>
+</html>
