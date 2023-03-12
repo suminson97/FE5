@@ -1,0 +1,28 @@
+body {
+  background-image: url(./images/bg.png);
+}
+
+.wrap {
+  width: 300px;
+  margin: 100px auto;
+  height: auto;
+}
+/* .fox {
+  height: 300px;
+  background: url(./images/animal07.png);
+} */
+.green {
+  height: 50px;
+  background: url(./images/green.png);
+}
+.text {
+  color: rgba(255, 255, 255, 0.678);
+  padding: 10px 20px 20px 20px;
+  background-color: hsl(24, 56%, 42%);
+  border-radius: 0px 0px 25px 25px;
+  box-shadow: 0px 10px 1px rgb(82, 26, 4);
+}
+h1 {
+  color: white;
+  margin: 0 0 10px;
+}
