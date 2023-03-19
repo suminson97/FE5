@@ -1,0 +1,80 @@
+h1,
+p {
+  margin: 0;
+}
+.container {
+}
+.wrapper {
+  margin: 240px auto;
+}
+.head-main h1 {
+  margin-bottom: 20px;
+  font-size: 65px;
+  font-weight: 400;
+}
+.it-wrap {
+  display: flex;
+  flex-direction: column;
+}
+.it-first {
+  position: relative;
+  display: block;
+  width: 486px;
+  height: 280px;
+  background: url(../img/ractangle.svg);
+  border-radius: 20px;
+  text-decoration: none;
+  color: white;
+  margin-bottom: 20px;
+}
+.it-seccond {
+  position: relative;
+  display: block;
+  width: 486px;
+  height: 280px;
+  background: url(../img/ractangle2.svg);
+  border-radius: 20px;
+  text-decoration: none;
+  color: white;
+}
+.text-left {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  font-size: 30px;
+}
+.text-right {
+  position: absolute;
+  top: 230px;
+  left: 373px;
+}
+.text-right::after {
+  position: absolute;
+  content: ">";
+  display: block;
+  left: 70px;
+  bottom: 0;
+}
+.container {
+  display: flex;
+  width: 1224px;
+  max-width: calc(100% - 60px);
+  margin: auto;
+  gap: 102px;
+}
+.container div {
+  flex-basis: 0;
+  flex-shrink: 1;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .it-wrap {
+    flex-direction: row;
+    flex-basis: auto;
+
+    gap: 0;
+  }
+}
