@@ -1,0 +1,76 @@
+body,
+h1,
+h2,
+hr,
+button,
+input {
+  margin: 0;
+  padding: 0;
+}
+button {
+  border: none;
+  background: none;
+  font: inherit;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+h1,
+h2 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+ul li {
+  list-style: none;
+}
+.a11y-hidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
+.wrapper {
+  width: 520px;
+  margin: 100px auto;
+  border: 1px solid #c4c4c4;
+  border-radius: 10px;
+}
+.head-wrap {
+  width: 100%;
+  padding: 22px 0 18px;
+  border-bottom: 1px solid #c4c4c4;
+}
+h1 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+}
+.section-header {
+  font-size: 20px;
+  line-height: 24px;
+}
+.id-box,
+.pw-box {
+  width: 100%;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  padding: 15px 16px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+.id-box {
+  margin-top: 24px;
+}
+.pw-box {
+  margin: 10px 0 16px;
+}
+.section-box {
+  padding: 26px 24px 25px;
+}
+.inp-login {
+}
