@@ -1,0 +1,21 @@
+.one {
+  font-size: 10px + 10px;
+}
+
+.two {
+  font-size: 30px - 10px;
+}
+
+.three {
+  font-size: 10px * 2;
+}
+
+.four {
+  // px도 같이 나눠지니 주의
+  font-size: (20px / 10);
+}
+
+.five {
+  // 나머지
+  font-size: 8px % 3;
+}

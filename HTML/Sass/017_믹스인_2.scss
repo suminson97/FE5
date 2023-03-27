@@ -1,0 +1,15 @@
+.card {
+  @mixin box {
+    width: 100px;
+    height: 100px;
+  }
+  //  내부에 사용하지 않기를 권장
+
+  @include box;
+  background-color: blue;
+}
+
+.profile {
+  @include box;
+  background-color: red;
+}
