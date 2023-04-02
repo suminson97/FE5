@@ -9,9 +9,9 @@
 * {
   font-family: "SpoqaHanSansNeo-Regular";
 }
-.wrap {
-  width: 350px;
-  margin: auto;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 .a11y-hidden {
   clip: rect(1px, 1px, 1px, 1px);
@@ -23,63 +23,55 @@
   padding: 0;
   position: absolute;
 }
-
-article {
-  background: #ffffff;
+.login-box {
+  width: 350px;
   border: 1px solid #dbdbdb;
+  margin: 10px auto;
   border-radius: 5px;
-  font-size: 12px;
   padding: 18px 16px;
+  box-sizing: border-box;
 }
-p {
-  font-family: "Spoqa Han Sans Neo";
-  font-style: normal;
-  font-weight: 900;
+.title {
   font-size: 12px;
-  line-height: 15px;
 }
 .btn-login {
   display: block;
-  color: #ffffff;
-  background: #711bff;
+  background-color: #711bff;
   border-radius: 4px;
-  height: 40px;
-  line-height: 40px;
-  font-size: 12px;
-  text-decoration: none;
   text-align: center;
+  color: white;
   margin: 16px 0;
+  padding: 11px 0;
 }
 .btn-login img {
   height: 18px;
   vertical-align: middle;
 }
-a {
+.login-link {
+  font-size: 12px;
   color: #767676;
-  text-decoration: none;
 }
-.btn-join {
-  float: right;
-}
-.find-id + span {
-  display: inline-block;
-  width: 1px;
-  height: 12px;
-  background: #767676;
-  vertical-align: middle;
-  margin: 0 4px;
-}
-
 .find-id {
-  background-image: url(../IMG/icon-lock.png);
+  background: url(../IMG/icon-lock.png);
 }
 .btn-join {
-  background-image: url(../img/icon-user.png);
+  background: url(../IMG/icon-user.png);
 }
 .find-id,
 .btn-join {
   background-repeat: no-repeat;
   background-position: 0 50%;
   background-size: 1em;
-  padding-left: 1.2em;
+  padding-left: 1.2rem;
+}
+.find-id + span {
+  display: inline-block;
+  height: 12px;
+  width: 1px;
+  background-color: #767676;
+  vertical-align: middle;
+  margin: 0 4px;
+}
+.btn-join {
+  float: right;
 }
