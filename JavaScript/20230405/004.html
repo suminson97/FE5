@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <script>
+        const score = parseInt(prompt("점수를 입력하세요!"))
+        let message = (score > 100) ? '숫자가너무커요' :
+            (score >= 90) ? 'A' :
+                (score >= 80) ? 'B' :
+                    (score >= 70) ? 'C' :
+                        (score >= 60) ? 'D' : '강해져서 돌아와라'
+        console.log(message)
+
+
+    </script>
+</body>
+
+</html>
