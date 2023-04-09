@@ -1,0 +1,86 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+p {
+  padding: 0;
+  margin: 0;
+}
+.a11y-hidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
+
+.wrapper {
+  width: 350px;
+  height: 140px;
+  margin: 100px auto;
+  box-sizing: border-box;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+  padding: 19px 16px 18px;
+}
+.wrapper p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  margin-bottom: 10px;
+}
+.btn-login {
+  color: white;
+  display: block;
+  width: 318px;
+  height: 40px;
+  background: #711bff;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 10px;
+}
+.btn-login img {
+  width: 64px;
+  height: 18px;
+  vertical-align: bottom;
+}
+.find,
+.join {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+
+  color: #767676;
+}
+.find {
+  display: inline-block;
+  margin-top: 18px;
+}
+.find span {
+  display: inline-block;
+  width: 1px;
+  height: 12px;
+  vertical-align: middle;
+  margin: 0px 0 3px 6px;
+  background-color: #767676;
+}
+
+.find-id {
+  float: left;
+
+  background: url(./img/icon-lock.png) no-repeat 0 50% / 1.2em;
+  padding-left: 1.2rem;
+}
+.join {
+  background: url(./img/icon-user.png) no-repeat 0 50% / 1.2em;
+  float: right;
+  padding-left: 1.2rem;
+  margin-top: 16px;
+}
