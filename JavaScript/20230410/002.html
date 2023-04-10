@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .blue {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="blue">hello</button>
+    <script>
+        const myBtn = document.querySelector("button");
+
+        myBtn.addEventListener('click', function () {
+            // console.log("hello world");
+
+            // myBtn.classList.add("blue");
+
+            // myBtn.classList.remove("blue");     클래스를 제거합니다.
+            // myBtn.classList.toggle("blue");     클래스를 토글합니다. 없으면 넣어주고, 있으면 제거합니다.
+            // myBtn.classList.contains("blue");   해당하는 클래스가 있는지 확인합니다.
+        })
+
+
+
+        // const canvas = document.querySelector(".canvas");
+        // btnRed = document.querySelector('.btn-red'),
+        //  btnYellow = document.querySelector('.btn-yellow'),
+        //  btnGreen = document.querySelector('.btn-green');
+
+        // const btns = document.querySelectorAll("button[class^='btn']");
+
+        //  const btnArry = [btnRed, btnYellow, btnGreen];
+
+        // btns.forEach((item) => {
+        //     item.addEventListener('click', () => {
+        //         canvas.classList.remove('yellow', 'red', 'green');
+        //         if (item.classList.contains("btn-red")) {
+        //             canvas.classList.add('red');
+        //         } else if (item.classList.contains("btn-yellow")) {
+        //             canvas.classList.add('yellow');
+        //         } else {
+        //             canvas.classList.add('green');
+        //         }
+        //     });
+        // })
+
+        //  btnYellow.addEventListener('click', () => {
+        //      canvas.classList.remove('yellow', 'red', 'green');
+        //     canvas.classList.add('yellow');
+        //  });
+        //  btnGreen.addEventListener('click', () => {
+        //      canvas.classList.remove('yellow', 'red', 'green');
+        //      canvas.classList.add('green');
+        //  });
+    </script>
+</body>
+
+</html>
