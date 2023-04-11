@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <p>hello</p>
+    <script>
+        const txt = document.querySelector('p')
+        const name = "<img src = 'x' onerror = 'alert(12313)'>"
+        //이미지 경로가 없으면 랜더링 실패 => 실행시켜주는 속성(onerror)
+
+        txt.innerHTML = name;
+    </script>
+</body>
+
+</html>
