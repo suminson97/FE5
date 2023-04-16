@@ -27,10 +27,10 @@
 
         txt2.replace('CEO', 'COO');//앞에있는것만 바뀜
         txt2.replace(/CEO/g, 'COO');
+
+        txt2.replaceAll('CEO', 'COO');
         //구 브라우저지원 안될 가능성이 큼 , 회사가서 확인하세요.
         //21년도에 추가되었습니다.
-        txt2.replaceAll('CEO', 'COO');
-
         console.log(txt2.toLowerCase());
         console.log(txt2.toUpperCase());
 

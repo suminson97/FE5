@@ -56,12 +56,12 @@
         //텍스트가 숫자로 시작하지 않을때  NaN
         //텍스트가 숫자로 시작했을 경우 숫자 까지만 변환가능
         //int 는 정수, float 는 실수
-        console.log(paeseInt(" "));//NaN **
-        console.log(paeseInt(""));//NaN**
-        console.log(paeseInt("hello")); //NaN
-        console.log(paeseInt("10 20"));// 10
-        console.log(paeseInt("10abc")); // 10****
-        console.log(parseFloat("10.123"));
+        console.log(parseInt(" "));//NaN **
+        console.log(parseInt(""));//NaN**
+        console.log(parseInt("hello")); //NaN
+        console.log(parseInt("10 20"));// 10
+        console.log(parseInt("10abc")); // 10****
+        console.log(parseFloat("10.123"));//10.123
 
 
 
@@ -85,7 +85,7 @@
 
         //Math****
         Math.abs(-10); //절대값
-        Math.cail(10.3); //올림
+        Math.ceil(10.3); //올림
         Math.floor(10.3);//내림
         Math.round(10.5); //반올림
         Math.sqrt(100); //square root, 루트
@@ -100,7 +100,7 @@
         let values = [1, 2, 3, 4, 5]
         let values2 = [6, 7, 8, 9, 10]
 
-        Math.max(values)// X
+        Math.max(values)// X (NaN)
         Math.max(...values)// O
         Math.max(...values, ...values2)// O
 

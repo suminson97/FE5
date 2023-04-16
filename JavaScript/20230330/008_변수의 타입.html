@@ -67,6 +67,7 @@
 
 
         // 형변환(다른 type -> number)
+        //int 정수 float 실수
         console.log(+'10')
         console.log(Number('10')) // 권하지 않습니다.
         console.log(parseInt('10')) // 권합니다.
@@ -75,6 +76,8 @@
         console.log(parseInt(false)) // NaN
         console.log(Number(true)) // 1
         console.log(Number(false)) // 0
+        //parseInt ,float은 숫자+문자일때 숫자만, 문자 일때 NaN
+        //Number는 숫자+ 문자, 문자일때 NaN, true false의 값은 나온다
 
         // 형변환(다른 type -> string)
         let hojun = 10;

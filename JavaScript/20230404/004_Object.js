@@ -33,7 +33,7 @@ arr.length;
 //3
 //배열이 아닙니다. 유사 배열객체 라고합니다.
 //똑같은 요소로만들어도 arr가 순회할때 더 빠릅니다.
-const human = {
+const human2 = {
   name: "hojun",
   age: 53,
   from: "korea",
@@ -42,10 +42,10 @@ const human = {
   },
 };
 
-human.name = "jun";
-human.name;
-human.askingHim();
-delete human.jab;
+human2.name = "jun";
+human2.name;
+human2.askingHim();
+delete human2.job;
 
 //다른언어와 동작방식이 달라 주의해주세요.
 console.log("age" in human);

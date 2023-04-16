@@ -24,8 +24,8 @@ console.log(height2 ?? 100);
 let height3 = "";
 console.log(height3 || "hello");
 console.log(height3 ?? "world");
-// || : 0, null, undefined
+// || : 0, null, undefined, false, NaN, '', etc...
 // ?? : null, undefined
 
-// falsy하다 : 0, null, undefined, "", NaN
+// falsy하다 : 0, null, undefined, false, NaN, '', etc...
 // nullish하다 : null, undefined

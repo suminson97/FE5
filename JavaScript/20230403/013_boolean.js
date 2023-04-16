@@ -10,7 +10,7 @@ let b = false;
 
 console.log(a && b);
 
-//true,false 가 아닌값을 and,or 연산 했을 경우 단락 회로 편가를 하게 됩니다.
+//true,false 가 아닌값을 and,or 연산 했을 경우 단락 회로 평가를 하게 됩니다.
 let a2 = "hello";
 let b2 = "";
 

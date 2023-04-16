@@ -74,3 +74,8 @@ h1 {
 }
 .inp-login {
 }
+.btn-wrap p:first-child {
+  width: 28px;
+  height: 28px;
+  background: url("css_sprites.png") -10px -10px;
+}

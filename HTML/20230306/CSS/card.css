@@ -1,5 +1,7 @@
 body {
   background: rosybrown;
+  padding: 0;
+  margin: 0;
 }
 
 h2,
@@ -13,7 +15,10 @@ p {
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
-  margin-top: 10px;
+}
+
+.card-item:nth-child(4n-3) {
+  margin-left: 0;
 }
 .card-item a {
   text-decoration: none;
@@ -50,4 +55,18 @@ p {
   font-weight: bold;
   font-size: 14px;
   padding-left: 6px;
+}
+.container {
+  width: min(1224px, 100% - 60px);
+  margin: auto;
+}
+.container::after {
+  content: "";
+  display: block;
+  clear: left;
+}
+.container article {
+  float: left;
+  width: calc((100% - (24px * 3)) / 4);
+  margin: 0 0 32px 24px;
 }
