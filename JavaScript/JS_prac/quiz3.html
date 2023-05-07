@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <div class="alert alert-danger">
+        <span id="num">5</span>초 이내 구매시 사은품 증정
+    </div>
+
+    <script>
+        let count = 5
+        setInterval(() => {
+            count -= 1;
+            if (count >= 0) {
+                document.querySelector('#num').innerHTML = count;
+            } else {
+                document.querySelector('.alert').style.display = 'none'
+            }
+        }, 1000)
+
+
+
+    </script>
+</body>
+
+</html>

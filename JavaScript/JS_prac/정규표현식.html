@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <script> $('form').on('submit', function (e) {
+
+            var 입력한값 = document.getElementById('email').value;
+            if (/\S+@\S+.\S+/.test(입력한값)) {
+                alert('이메일형식아님')
+                e.preventDefault();
+            }
+            var 비밀번호 = document.getElementById('pw'), value;
+
+            if (/[A-Z]/.test(비밀번호)) {
+                alert('비밀번호아닙')
+            }
+        });
+    </script>
+</body>
+
+</html>
