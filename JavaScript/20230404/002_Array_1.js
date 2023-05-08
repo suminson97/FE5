@@ -27,7 +27,7 @@ arr["leehojun"] = 100;
 arr.hojun = 1000;
 
 // 배열의 특징
-// let arr = [];
+// let arr = []; 빈배열 가능
 // let arr = [1, 2, 3];
 // let arr2 = new Array(4, 5, 6);
 // let arr2 = new Array(3);
@@ -177,7 +177,7 @@ tip6.flat(1);
 tip6.flat(2);
 tip6.flat(Infinity); //다 펼쳐지면 스톱
 
-const tip7 = new Array(10).fill(0); // Arayy(10).fill(0)도 됩니다.
+const tip7 = new Array(10).fill(0); // Array(10).fill(0)도 됩니다.
 const tip8 = Array.from("hello world");
 
 let tip10 = [1, 2, 3, 4, 5];
@@ -297,7 +297,7 @@ avengers.forEach(function (item) {
 });
 console.log(newAvengers);
 
-//map (면접 질문에서도 많이 나옵니다. 데이터를 뽑으려고 많이 사용합니다.)
+//map(면접 질문에서도 많이 나옵니다. 데이터를 뽑으려고 많이 사용합니다.)
 //map은 forEach 와다르게 새로운 배열을 생성합니다.
 
 const arr = [1, 2, 3];

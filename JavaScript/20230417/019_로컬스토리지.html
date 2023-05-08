@@ -53,7 +53,7 @@
             const title = document.getElementById("title").value;
             const content = document.getElementById("content").value;
 
-            allMemo.push({ title, content, len: allMemo.length });
+            allMemo.push({ title, content, id: allMemo.length });
 
             localStorage.setItem("allMemo", JSON.stringify(allMemo));
             render();
@@ -76,11 +76,11 @@
 
                 saveTitle.textContent = item.title;
                 saveContent.textContent = item.content;
-                saveId.textContent = item.len + 1;
+                saveId.textContent = item.id + 1;
                 deleteMemoBtn.textContent = "삭제";
-                deleteMemoBtn.setAttribute("id", item.len);
+                deleteMemoBtn.setAttribute("id", item.id);
                 deleteMemoBtn.setAttribute("onclick", "remove()");
-
+                console.log(deleteMemoBtn)
                 display.appendChild(saveId);
                 display.appendChild(saveTitle);
                 display.appendChild(saveContent);
@@ -92,11 +92,11 @@
             // console.log(event.srcElement.id);
             // console.log(allMemo);
             const idx = allMemo.find(
-                (item) => item.len == event.srcElement.id
+                (item) => item.id == event.srcElement.id
             );
             if (idx) {
                 allMemo.splice(
-                    allMemo.findIndex((item) => item.len == idx.len),
+                    allMemo.findIndex((item) => item.id == idx.id),
                     1
                 );
             }

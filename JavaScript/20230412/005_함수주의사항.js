@@ -10,13 +10,11 @@
   let a = 3;
   let b = 5;
   return a * b;
-})()(
-  (function foo() {
-    let a = 3;
-    let b = 5;
-    return a * b;
-  })()
-);
+})()(function foo() {
+  let a = 3;
+  let b = 5;
+  return a * b;
+})();
 
 foo(); // 즉시 실행함수로 실행시켰을 경우 밖에서 호출할 수 없습니다.
 

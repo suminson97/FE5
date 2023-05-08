@@ -60,6 +60,7 @@
     </main>
     <script>
         const inpPicker = document.querySelectorAll('.inp-picker')
+        console.log(inpPicker)
         inpPicker.forEach((item) => {
             item.addEventListener('input', () => {
                 const name = '--main-' + item.dataset.id;
