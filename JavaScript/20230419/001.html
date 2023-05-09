@@ -10,6 +10,24 @@
 
 <body>
     <script>
+        const me = {
+            name: "손수민",
+            address: '파주시',
+            phoneNum: '010-7653-5570',
+            canWalk: function () {
+                console.log('손수민이 걷는다')
+            },
+            learning: funtion(myBrain){
+                myBrain.levelUp()
+            }
+        }
+        const brain = {
+            level: 1,
+            levelUp: function () {
+                this.level++;
+            }
+        }
+        me.learning(brain)
         // const me = {
         //     name: '웨이드',
         //     address: '제주도 제주시 인다 1길',
@@ -103,21 +121,21 @@
         //     myStudent.levelUp();
         // }
 
-        class Me {
-            constructor() {
-                this.name = '웨이드';
-                this.address = '제주도 제주시 인다 1길';
-                this.phoneNum = '010-8001-6536';
-            }
+        // class Me {
+        //     constructor() {
+        //         this.name = '웨이드';
+        //         this.address = '제주도 제주시 인다 1길';
+        //         this.phoneNum = '010-8001-6536';
+        //     }
 
-            canWalk() {
-                console.log('웨이드가 걷는다.');
-            }
+        //     canWalk() {
+        //         console.log('웨이드가 걷는다.');
+        //     }
 
-            teaching(myStudent) {
-                myStudent.levelUp();
-            }
-        }
+        //     teaching(myStudent) {
+        //         myStudent.levelUp();
+        //     }
+        // }
 
     </script>
 </body>
