@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
+    //  BrowserRouter -Routes-Route순으로 작성
     <BrowserRouter>
       {/* 라우트를 감싸줍니다. */}
       <Routes>
