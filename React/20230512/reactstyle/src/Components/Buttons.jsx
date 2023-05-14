@@ -6,7 +6,7 @@ const ContentBtnOne = styled.button`
   color: white;
   padding: 10px;
 `;
-
+// CSS 확장
 const one = css`
   box-shadow: 1px 1px 5px 1px black;
 `;

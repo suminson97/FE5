@@ -1,7 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 import Example from "./Components/Example";
 import reset from "styled-reset";
-
+//  글로벌 스타일 만들기
 const GlobalStyle = createGlobalStyle`
     ${reset}
     

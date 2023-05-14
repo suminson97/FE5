@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-
+// styled-components를 사용한 스타일
 const ContentDiv = styled.div`
   margin: 40px;
 `;
-
+// props에 따른 조건부 스타일
 const ContentH2 = styled.h2`
   color: ${(props) => (props.name === "hello" ? "red" : "black")};
   width: 200px;
