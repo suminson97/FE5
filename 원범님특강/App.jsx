@@ -50,6 +50,7 @@ function App() {
       <button
         onClick={() => {
           setNum(num + 1);
+          console.log(num);
         }}
       >
         더하기
