@@ -15,7 +15,7 @@ export default function DiaryList({ diaries }) {
           </time>
           <p className={styles["article-content"]}>{item.text}</p>
 
-          <div className="button-group">
+          <div className={styles["button-group"]}>
             <button type="button">
               <img src={iconEdit} alt="수정" />
             </button>
