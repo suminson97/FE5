@@ -1,8 +1,7 @@
 import setup from "./colaGenerator.mjs";
+import bindEvent from "./vendingMachineEvents.mjs";
 
-// (async () => {
-//   const data = await getData();
-//   console.log(data);
-// })();
-
-setup();
+(async () => {
+  await setup();
+  bindEvent();
+})();
