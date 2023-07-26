@@ -1,6 +1,6 @@
 // 사라
 // - 상품 데이터 파일 세팅
-const characterList = document.querySelector(".character-list");
+const colaList = document.querySelector(".cola-list");
 
 // 데이터 불러오기
 const getData = async () => {
@@ -17,36 +17,37 @@ const getData = async () => {
 };
 
 // 상품 요소 생성
-const characterCollection = (data) => {
-  let itemsEl = "";
+
+const colaFactory = (data) => {
+  let allItemEl = "";
+
   data.forEach((v) => {
-    itemsEl += `<li>
-    <button class="btn-character active" type="button" data-name=${
-      v.name
-    } data-img=${v.img} data-count=${v.count} data-cost=${v.cost} ${
-      !v.count && "disabled"
-    }>
-      <img class="character-img" src="../img/${v.img}" alt="">
-      <span class="character-name">${v.name}</span>
-      <strong class="character-price">${v.cost}원</strong>
-      ${
-        !v.count
-          ? `<strong class="soldout">
-              <span>품절</span>
-            </strong>`
-          : ""
-      }
-    </button>
-  </li>
-    `;
+    allItemEl += `<li>
+      <button class="btn-cola" type="button" ${
+        !v.count && "disabled"
+      } data-name="${v.name}" data-img="${v.img}" data-cost="${
+      v.cost
+    }" data-count="${v.count}">
+        <img class="cola-img" src="./img/${v.img}" alt="">
+        <span class="cola-name">${v.name}</span>
+        <strong class="cola-price">${v.cost}원</strong>
+        ${
+          !v.count
+            ? `<strong class="soldout">
+                <span>품절</span>
+              </strong>`
+            : ""
+        }
+      </button>
+    </li>`;
   });
 
-  characterList.innerHTML = itemsEl;
+  colaList.innerHTML = allItemEl;
 };
 
 const setup = async () => {
   const data = await getData();
-  characterCollection(data);
+  colaFactory(data);
 };
 
 export default setup;
